@@ -401,7 +401,11 @@ img {
     .work-gallery {
         .each-item {
             overflow: hidden;
+            border-radius: 10px;
             .each-item-container {
+                img {
+                    border-radius: 10px;
+                }
                 margin: 15px 0;
                 position: relative;
                 &:hover {
@@ -420,6 +424,7 @@ img {
                 transform: scale(0);
                 opacity: .9;
                 transition: .5s;
+                border-radius: 10px;
                 .title {
                     h6 {
                         font-size: 16px;
@@ -499,6 +504,36 @@ img {
         border-radius: 50%;
         &:hover {
             background-color: $bg-green;
+        }
+    }
+}
+
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=>7.CLIENT
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+.blog-section {
+    .blog-container {
+        .blog-item {
+            .blog-content {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                .read-more-btn {
+                    button {
+                        padding: 10px;
+                        border-radius: 20px;
+                        color: $bg-green;
+                        border: 2px solid $bg-green;
+                        &:hover {
+                            background-color: $bg-green;
+                            color: $color-white;
+                        }
+                    }
+                }
+            }
         }
     }
 }
