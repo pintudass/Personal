@@ -1,0 +1,374 @@
+/*
+*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* Template Name    : Pintu | Responsive Bootstrap 4 Personal Template
+* Author           : Pintu
+* Version          : 1.0.0
+* Created          : April 2020
+* File Description : Main css file of the template
+*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap");
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=>1.GLOBAL
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600; }
+
+h1 {
+  font-size: 45px; }
+
+h2 {
+  font-size: 36px; }
+
+h3 {
+  font-size: 30px; }
+
+h4 {
+  font-size: 24px; }
+
+h5 {
+  font-size: 24px; }
+
+h6 {
+  font-size: 20px; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+a,
+a:hover,
+a:focus,
+button,
+button:focus {
+  text-decoration: none !important;
+  outline: none !important;
+  box-shadow: none !important; }
+
+img {
+  max-width: 100%; }
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=>2.COMMON
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+.section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative; }
+
+.overlay-bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: #000000;
+  opacity: .8; }
+
+.slide-down {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: slide 1.5s infinite;
+  transition: 2s all; }
+  .slide-down .pos-relative button {
+    height: 80px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    font-size: 30px;
+    color: #ffffff; }
+    .slide-down .pos-relative button:hover {
+      border: 2px solid green;
+      color: green; }
+
+@keyframes slide {
+  0% {
+    bottom: 40px; }
+  20% {
+    bottom: 10px; }
+  40% {
+    bottom: 30px; }
+  60% {
+    bottom: 10px; }
+  60% {
+    bottom: 20px; }
+  100% {
+    bottom: 10px; } }
+
+.background-img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0; }
+
+.d-none {
+  display: none; }
+
+.section-title {
+  text-align: center;
+  margin: 40px auto; }
+  .section-title .title-container {
+    display: inline-block; }
+    .section-title .title-container .heading {
+      position: relative; }
+      .section-title .title-container .heading h2 {
+        text-align: center;
+        z-index: 10;
+        text-transform: uppercase;
+        color: #000000; }
+        .section-title .title-container .heading h2 span {
+          color: green; }
+    .section-title .title-container .bottom-style {
+      position: relative; }
+      .section-title .title-container .bottom-style ul {
+        display: flex;
+        justify-content: center; }
+        .section-title .title-container .bottom-style ul li {
+          height: 40px;
+          width: 3px;
+          color: red;
+          background-color: red;
+          margin-right: 3px;
+          margin-left: 3px; }
+          .section-title .title-container .bottom-style ul li:nth-child(1), .section-title .title-container .bottom-style ul li:nth-child(3), .section-title .title-container .bottom-style ul li:nth-child(5) {
+            background-color: blue;
+            height: 20px;
+            margin-top: 10px; }
+      .section-title .title-container .bottom-style::after, .section-title .title-container .bottom-style::before {
+        content: "";
+        position: absolute;
+        height: 3px;
+        background-color: green;
+        top: 50%;
+        transform: translateY(-50%); }
+      .section-title .title-container .bottom-style::after {
+        right: 0;
+        left: calc(50% + 30px); }
+      .section-title .title-container .bottom-style::before {
+        right: calc(50% + 30px);
+        left: 0; }
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=>3.HEADER
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+.header-section {
+  background-image: url("../../img/header.jpg");
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding-top: 0; }
+  .header-section .navbar {
+    background-color: transparent;
+    z-index: 5; }
+    .header-section .navbar .navbar-brand {
+      font-size: 45px;
+      font-weight: 700;
+      color: green; }
+    .header-section .navbar ul li a {
+      padding: 25px;
+      color: #ffffff;
+      display: block;
+      margin: 2px; }
+      .header-section .navbar ul li a.active {
+        color: green; }
+      .header-section .navbar ul li a:hover {
+        color: green; }
+  .header-section .main-content {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    z-index: 5; }
+    .header-section .main-content span {
+      color: green;
+      display: none; }
+    .header-section .main-content .social-icon ul li a {
+      color: #ffffff;
+      font-size: 18px;
+      display: inline-block;
+      margin: 10px;
+      padding-top: 5px;
+      text-align: center;
+      height: 40px;
+      width: 40px;
+      border: 2px solid #ffffff;
+      border-radius: 50%;
+      background-color: transparent; }
+      .header-section .main-content .social-icon ul li a:hover {
+        border: 2px solid green;
+        color: green; }
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=>4.SERVICE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+.service-section .heading h2 {
+  color: #000000; }
+
+.service-section .item {
+  padding: 15px;
+  text-align: center;
+  margin: 10px 0;
+  border: 2px solid green; }
+  .service-section .item .title {
+    margin-top: 10px; }
+  .service-section .item .icon {
+    transform: scale(1.3);
+    color: green;
+    transition: .5s; }
+    .service-section .item .icon .fab {
+      font-size: 100px; }
+  .service-section .item .read-more {
+    background-color: green;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 20px;
+    transition: .5s; }
+  .service-section .item:hover .icon {
+    transform: scale(1) rotate(360deg); }
+  .service-section .item:hover .read-more {
+    border: 2px solid green;
+    color: green;
+    background-color: #ffffff; }
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=>5.PORTFOLIO
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+.portfolio-section .background-img {
+  background: url("../../img/post3.jpg") fixed center no-repeat;
+  background-size: cover; }
+
+.portfolio-section .section-title .title-container .heading h2 {
+  color: #ffffff; }
+
+.portfolio-section .work-menu .menu-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; }
+  .portfolio-section .work-menu .menu-container li {
+    margin: 5px;
+    padding: 10px 20px;
+    display: inline-block;
+    border: 2px solid transparent;
+    cursor: pointer;
+    color: #ffffff;
+    position: relative; }
+    .portfolio-section .work-menu .menu-container li.mixitup-control-active {
+      background-color: green;
+      border: 2px solid #ffffff;
+      border-radius: 50%;
+      color: #ffffff; }
+      .portfolio-section .work-menu .menu-container li.mixitup-control-active:after {
+        position: absolute;
+        left: -4px;
+        right: -4px;
+        bottom: -4px;
+        top: -4px;
+        content: '';
+        border: 2px solid green;
+        border-radius: 50%; }
+
+.portfolio-section .work-gallery .each-item {
+  overflow: hidden; }
+  .portfolio-section .work-gallery .each-item .each-item-container {
+    margin: 15px 0;
+    position: relative; }
+    .portfolio-section .work-gallery .each-item .each-item-container:hover .each-item-when-hover {
+      transform: scale(1); }
+  .portfolio-section .work-gallery .each-item .each-item-when-hover {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: green;
+    transform: scale(0);
+    opacity: .9;
+    transition: .5s; }
+    .portfolio-section .work-gallery .each-item .each-item-when-hover .title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #ffffff; }
+      .portfolio-section .work-gallery .each-item .each-item-when-hover .title h6 {
+        font-size: 16px; }
+      .portfolio-section .work-gallery .each-item .each-item-when-hover .title button {
+        font-size: 14px;
+        display: inline-block;
+        background-color: green;
+        color: #ffffff;
+        padding: 5px;
+        border-radius: 20px;
+        margin-bottom: 10px; }
+        .portfolio-section .work-gallery .each-item .each-item-when-hover .title button:hover {
+          background-color: #ffffff;
+          color: green; }
+    .portfolio-section .work-gallery .each-item .each-item-when-hover span {
+      position: absolute;
+      color: #ffffff;
+      font-size: 24px;
+      text-align: center;
+      font-weight: 600;
+      border-radius: 10px;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%); }
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=>6.CLIENT
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+.client-section {
+  background: url("../../img/gallery/post6.jpg") fixed center no-repeat;
+  background-size: cover; }
+  .client-section .section-title .title-container .heading h2 {
+    color: #ffffff; }
+  .client-section .every-client {
+    text-align: center;
+    color: #ffffff; }
+    .client-section .every-client img {
+      height: 200px;
+      width: 200px;
+      border-radius: 50%; }
+  .client-section .carousel-control-prev,
+  .client-section .carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+    height: 40px;
+    width: 40px;
+    border: 2px solid #ffffff;
+    border-radius: 50%; }
+    .client-section .carousel-control-prev:hover,
+    .client-section .carousel-control-next:hover {
+      background-color: green; }
